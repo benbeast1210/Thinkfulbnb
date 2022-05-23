@@ -42,8 +42,10 @@ main img {
 }
 
 .item {
-  flex: 1;
-  margin:10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
 }
 
 .item-double {
