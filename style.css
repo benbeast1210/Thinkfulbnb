@@ -92,7 +92,7 @@ header nav ul li a:hover {
 form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border: 2px solid #ff385c;
   padding: 10px;
 }
@@ -131,7 +131,7 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media all and (min-width: 600px) {
+@media (min-width: 480px) {
   header {
     background-color: #ff385c;
     display: flex;
@@ -143,8 +143,10 @@ footer p {
     padding: 10px;
   }
 
-  form {
-    flex-direction: row;
+  .vacation-form {
+    flex-direction: column;
+    justify-content: space-around;
+    flex-flow: row wrap;
   }
 
   .group {
@@ -157,7 +159,7 @@ footer p {
 
   .vacation-form .item {
     display: flex block;
-    flex: 1 1 auto;
+    flex: 1 0 auto;
     flex-direction: column;
   }
 
