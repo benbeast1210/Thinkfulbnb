@@ -1,4 +1,4 @@
-* -------  General Styles ------- */
+/* -------  General Styles ------- */
 
 body {
   font-family: "Lato", sans-serif;
@@ -42,10 +42,8 @@ main img {
 }
 
 .item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
+  flex: 1;
+  margin:10px;
 }
 
 .item-double {
@@ -61,9 +59,9 @@ header {
 }
 
 .logo {
-  color: #fff;
   font-family: "Pangolin", cursive;
   font-size: 50px;
+  color: #fff;
 }
 
 header nav ul {
@@ -77,8 +75,8 @@ header nav ul li {
 
 header nav ul li a {
   color: #fff;
-  padding: 0 20px 0 0;
   text-decoration: none;
+  padding: 0 20px 0 0;
 }
 
 header nav ul li:last-child a {
@@ -92,10 +90,10 @@ header nav ul li a:hover {
 
 /* -------  Search Form ------- */
 form {
-  border: 2px solid #ff385c;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 2px solid #ff385c;
   padding: 10px;
 }
 
@@ -107,6 +105,7 @@ form select,
 form input {
   margin-bottom: 20px;
   width: 65%;
+  float: right;
 }
 
 form button {
@@ -126,49 +125,48 @@ footer {
 
 footer p {
   color: #fff;
-  padding: 20px;
   text-align: center;
+  padding: 20px;
 }
 
 /* -------  Media Query ------- */
 
-@media all and (min-width: 480px) {
+@media all and (min-width: 600px) {
   header {
     background-color: #ff385c;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  
+
   header nav {
     padding: 10px;
   }
-  
+
   form {
     flex-direction: row;
   }
-  
-  
-  form div {
+
+  .group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  .vacation-form .item {
     display: flex block;
     flex: 1 1 auto;
     flex-direction: column;
   }
 
-  form div label,
-  form div input,  
-  form div select,
-  form div button {
+  .item label
+  , .item input 
+  , .item select 
+  , .item button{
     display: flex;
     width: 100%
-  }
-
-  .group {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-flow: row nowrap;
-    justify-content: center;
   }
 
   .grid-column {
