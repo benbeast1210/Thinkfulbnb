@@ -164,9 +164,15 @@ footer p {
   .item label
   , .item input 
   , .item select 
-  , .item button{
+  , .item button {
     display: flex;
     width: 100%
+  }
+
+  .grid-row {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
   }
 
   .grid-column {
@@ -174,11 +180,5 @@ footer p {
     flex: 1;
     flex-direction: column; 
     margin: 10px;
-  }
-
-  .grid-row {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
   }
 }
