@@ -105,7 +105,6 @@ form select,
 form input {
   margin-bottom: 20px;
   width: 65%;
-  float: right;
 }
 
 form button {
@@ -131,7 +130,7 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media (min-width: 480px) {
+@media all and (min-width: 480px) {
   header {
     background-color: #ff385c;
     display: flex;
@@ -183,4 +182,5 @@ footer p {
     flex-direction: column; 
     margin: 10px;
   }
+
 }
